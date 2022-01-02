@@ -49,7 +49,7 @@ def controlerLettreDansMot(saisieUtilisateur, motATrouver) :
     return isInputValid
 
 def afficherViesRestants(saisieCorrecte, nombreViesRestants, doublonLettreSaisie) :
-    if doublonLettreSaisie or not saisieCorrecte :
+    if not saisieCorrecte:
         print("Vous avez fait une erreur ...\n")
         nombreViesRestants -= 1
     print("Il vous reste encore : " + str(nombreViesRestants) + " vie(s)\n")
